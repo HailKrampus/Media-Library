@@ -78,7 +78,23 @@
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
   }
+  .item:hover {
+    transform: translateX(3px);
+    box-shadow: 0 2px 8px rgba(59,47,47,0.15);
+  }
+  .surprise-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background: var(--terracotta);
+    color: white;
+    font-family: inherit;
+    font-size: 0.95rem;
+    cursor: pointer;
+  }
+  .surprise-btn:hover { background: #a8501f; }
   .item .title { flex: 1; }
   .badge {
     font-size: 0.72rem;
@@ -124,6 +140,7 @@
     <option value="DVD">DVD</option>
     <option value="Blu-ray">Blu-ray</option>
   </select>
+  <button class="surprise-btn" id="surpriseBtn">🎲 Surprise me</button>
 </div>
 
 <div class="stats" id="stats"></div>
@@ -147,6 +164,14 @@ document.getElementById('search').addEventListener('input', render);
 document.getElementById('statusFilter').addEventListener('change', render);
 document.getElementById('categoryFilter').addEventListener('change', render);
 document.getElementById('formatFilter').addEventListener('change', render);
+document.getElementById('surpriseBtn').addEventListener('click', () => {
+  const haves = library.filter(i => i.status === 'have');
+  if (haves.length === 0) return;
+  const pick = haves[Math.floor(Math.random() * haves.length)];
+  document.getElementById('search').value = pick.title;
+  document.getElementById('statusFilter').value = 'all';
+  render();
+});
 
 function render() {
   const term = document.getElementById('search').value.toLowerCase();
@@ -189,15 +214,36 @@ function render() {
     });
     resultsEl.innerHTML = html;
   } else {
-    filtered.sort((a, b) => a.title.localeCompare(b.title));
-    resultsEl.innerHTML = filtered.map(renderItem).join('');
+    const groups = { movie: [], tv: [] };
+    filtered.forEach(item => {
+      (groups[item.category] = groups[item.category] || []).push(item);
+    });
+    const labels = { movie: '🎬 Movies', tv: '📺 TV Shows' };
+    let html = '';
+    ['movie', 'tv'].forEach(cat => {
+      if (groups[cat] && groups[cat].length) {
+        html += `<div class="group-label">${labels[cat]} (${groups[cat].length})</div>`;
+        groups[cat].sort((a, b) => a.title.localeCompare(b.title)).forEach(item => {
+          html += renderItem(item);
+        });
+      }
+    });
+    resultsEl.innerHTML = html;
   }
+}
+
+function formatIcon(fmt) {
+  if (fmt === 'VHS') return '📼';
+  if (fmt === 'Blu-ray') return '💽';
+  if (fmt === 'DVD') return '💿';
+  return '';
 }
 
 function renderItem(item) {
   const copies = item.copies ? ` (x${item.copies})` : '';
+  const icon = formatIcon(item.format);
   return `<div class="item">
-    <span class="title">${item.title}${copies}</span>
+    <span class="title">${icon ? icon + ' ' : ''}${item.title}${copies}</span>
     <span class="fmt">${item.format || ''}</span>
     <span class="badge ${item.status}">${item.status}</span>
   </div>`;
