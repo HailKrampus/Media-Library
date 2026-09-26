@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Media Library</title>
+<style>
+  :root {
+    --sand: #ede3d3;
+    --card: #fff9f0;
+    --ink: #3b2f2f;
+    --terracotta: #c1622d;
+    --turquoise: #1f7a72;
+    --border: #d8c9ab;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    background: var(--sand);
+    color: var(--ink);
+    padding: 24px 16px 60px;
+  }
+  h1 {
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+  .subtitle {
+    text-align: center;
+    color: #7a6a55;
+    margin-bottom: 24px;
+    font-size: 0.95rem;
+  }
+  .controls {
+    max-width: 720px;
+    margin: 0 auto 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+  input[type="text"], select {
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--card);
+    color: var(--ink);
+    font-family: inherit;
+    font-size: 0.95rem;
+  }
+  input[type="text"] { flex: 1 1 240px; }
+  .stats {
+    max-width: 720px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 0.9rem;
+    color: #7a6a55;
+  }
+  .stats b { color: var(--ink); }
+  .results { max-width: 720px; margin: 0 auto; }
+  .group-label {
+    font-weight: bold;
+    margin: 18px 0 8px;
+    color: var(--terracotta);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 4px;
+  }
+  .item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  .item .title { flex: 1; }
+  .badge {
+    font-size: 0.72rem;
+    padding: 3px 8px;
+    border-radius: 999px;
+    color: white;
+    white-space: nowrap;
+  }
+  .badge.have { background: var(--turquoise); }
+  .badge.need { background: var(--terracotta); }
+  .fmt {
+    font-size: 0.72rem;
+    color: #7a6a55;
+    white-space: nowrap;
+  }
+  .empty {
+    text-align: center;
+    color: #7a6a55;
+    margin-top: 40px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Media Library</h1>
+<div class="subtitle">Physical collection — search, filter, and track what's missing</div>
+
+<div class="controls">
+  <input type="text" id="search" placeholder="Search titles...">
+  <select id="statusFilter">
+    <option value="all">All statuses</option>
+    <option value="have">Have</option>
+    <option value="need">Need</option>
+  </select>
+  <select id="categoryFilter">
+    <option value="all">All categories</option>
+    <option value="movie">Movies</option>
+    <option value="tv">TV</option>
+  </select>
+  <select id="formatFilter">
+    <option value="all">All formats</option>
+    <option value="VHS">VHS</option>
+    <option value="DVD">DVD</option>
+    <option value="Blu-ray">Blu-ray</option>
+  </select>
+</div>
+
+<div class="stats" id="stats"></div>
+<div class="results" id="results"></div>
+
+<script>
+let library = [];
+
+fetch('media.json')
+  .then(res => res.json())
+  .then(data => {
+    library = data;
+    render();
+  })
+  .catch(() => {
+    document.getElementById('results').innerHTML =
+      '<div class="empty">Could not load media.json — make sure it\'s in the same folder as this page.</div>';
+  });
+
+document.getElementById('search').addEventListener('input', render);
+document.getElementById('statusFilter').addEventListener('change', render);
+document.getElementById('categoryFilter').addEventListener('change', render);
+document.getElementById('formatFilter').addEventListener('change', render);
+
+function render() {
+  const term = document.getElementById('search').value.toLowerCase();
+  const status = document.getElementById('statusFilter').value;
+  const category = document.getElementById('categoryFilter').value;
+  const format = document.getElementById('formatFilter').value;
+
+  let filtered = library.filter(item => {
+    if (term && !item.title.toLowerCase().includes(term)) return false;
+    if (status !== 'all' && item.status !== status) return false;
+    if (category !== 'all' && item.category !== category) return false;
+    if (format !== 'all' && item.format !== format) return false;
+    return true;
+  });
+
+  const haveCount = library.filter(i => i.status === 'have').length;
+  const needCount = library.filter(i => i.status === 'need').length;
+  document.getElementById('stats').innerHTML =
+    `<span><b>${haveCount}</b> have</span><span><b>${needCount}</b> need</span><span><b>${filtered.length}</b> shown</span>`;
+
+  const resultsEl = document.getElementById('results');
+
+  if (filtered.length === 0) {
+    resultsEl.innerHTML = '<div class="empty">No matches.</div>';
+    return;
+  }
+
+  if (status === 'need') {
+    const groups = {};
+    filtered.forEach(item => {
+      const key = item.collection || 'Other';
+      (groups[key] = groups[key] || []).push(item);
+    });
+    let html = '';
+    Object.keys(groups).sort().forEach(key => {
+      html += `<div class="group-label">${key}</div>`;
+      groups[key].sort((a, b) => a.title.localeCompare(b.title)).forEach(item => {
+        html += renderItem(item);
+      });
+    });
+    resultsEl.innerHTML = html;
+  } else {
+    filtered.sort((a, b) => a.title.localeCompare(b.title));
+    resultsEl.innerHTML = filtered.map(renderItem).join('');
+  }
+}
+
+function renderItem(item) {
+  const copies = item.copies ? ` (x${item.copies})` : '';
+  return `<div class="item">
+    <span class="title">${item.title}${copies}</span>
+    <span class="fmt">${item.format || ''}</span>
+    <span class="badge ${item.status}">${item.status}</span>
+  </div>`;
+}
+</script>
+
+</body>
+</html>
