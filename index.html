@@ -97,6 +97,25 @@
     cursor: pointer;
   }
   .surprise-btn:hover { background: #a8501f; }
+  .install-bar {
+    max-width: 720px;
+    margin: 0 auto 16px;
+    text-align: center;
+  }
+  .install-btn {
+    padding: 2px 6px;
+    border: none;
+    background: none;
+    color: #7a6a55;
+    font-family: inherit;
+    font-size: 0.8rem;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .install-hint {
+    font-size: 0.85rem;
+    color: #7a6a55;
+  }
   .poster {
     width: 40px;
     height: 60px;
@@ -163,6 +182,7 @@
 
 <h1>Media Library</h1>
 <div class="subtitle">Physical collection — search, filter, and track what's missing</div>
+<div class="install-bar" id="installBar" style="display:none;"></div>
 
 <div class="controls">
   <input type="text" id="search" placeholder="Search titles...">
@@ -205,6 +225,30 @@ if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('service-worker.js');
   });
+}
+
+const installBar = document.getElementById('installBar');
+
+function isStandalone() {
+  return window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+}
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  if (isStandalone()) return;
+  installBar.style.display = 'block';
+  installBar.innerHTML = '<button class="install-btn" id="installBtn">📲 Install App</button>';
+  document.getElementById('installBtn').addEventListener('click', async () => {
+    installBar.style.display = 'none';
+    e.prompt();
+    await e.userChoice;
+  });
+});
+
+const isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent);
+if (isIOS && !isStandalone()) {
+  installBar.style.display = 'block';
+  installBar.innerHTML = '<span class="install-hint">On iPhone: tap Share, then "Add to Home Screen"</span>';
 }
 
 fetch('media.json')
