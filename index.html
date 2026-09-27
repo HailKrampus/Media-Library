@@ -95,6 +95,14 @@
     cursor: pointer;
   }
   .surprise-btn:hover { background: #a8501f; }
+  .poster {
+    width: 40px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+    background: var(--sand);
+  }
   .item .title { flex: 1; }
   .badge {
     font-size: 0.72rem;
@@ -242,7 +250,11 @@ function formatIcon(fmt) {
 function renderItem(item) {
   const copies = item.copies ? ` (x${item.copies})` : '';
   const icon = formatIcon(item.format);
+  const posterImg = item.poster
+    ? `<img class="poster" src="${item.poster}" alt="" loading="lazy">`
+    : '';
   return `<div class="item">
+    ${posterImg}
     <span class="title">${icon ? icon + ' ' : ''}${item.title}${copies}</span>
     <span class="fmt">${item.format || ''}</span>
     <span class="badge ${item.status}">${item.status}</span>
