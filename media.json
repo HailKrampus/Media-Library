@@ -1,138 +1,5 @@
 [
   {
-    "title": "Aladdin (Disney Classics)",
-    "format": "VHS",
-    "category": "movie",
-    "status": "have",
-    "poster": null
-  },
-  {
-    "title": "Alice in Wonderland (Disney Classics)",
-    "format": "VHS",
-    "category": "movie",
-    "status": "have",
-    "poster": null
-  },
-  {
-    "title": "Bambi (Disney Classics)",
-    "format": "VHS",
-    "category": "movie",
-    "status": "have",
-    "poster": null
-  },
-  {
-    "title": "Cinderella (Disney Classics)",
-    "format": "VHS",
-    "category": "movie",
-    "status": "have",
-    "poster": null
-  },
-  {
-    "title": "Snow White and the Seven Dwarfs (Masterpiece Collection)",
-    "format": "VHS",
-    "category": "movie",
-    "status": "have",
-    "poster": null
-  },
-  {
-    "title": "The Rescuers (Disney)",
-    "format": "VHS",
-    "category": "movie",
-    "status": "have",
-    "poster": null
-  },
-  {
-    "title": "Toy Story (Disney)",
-    "format": "VHS",
-    "category": "movie",
-    "status": "have",
-    "poster": "https://image.tmdb.org/t/p/w342/sfQtVlIHljToOwYjhe21KPGzZWK.jpg"
-  },
-  {
-    "title": "The Full Monty",
-    "format": "VHS",
-    "category": "movie",
-    "status": "have",
-    "poster": "https://image.tmdb.org/t/p/w342/fjg4EvzoLZVcZli4BwJIytJ6yjn.jpg"
-  },
-  {
-    "title": "Good Morning, Vietnam",
-    "format": "VHS",
-    "category": "movie",
-    "status": "have",
-    "poster": "https://image.tmdb.org/t/p/w342/sreISlFUn5TyR41QNjlfAdX5SEW.jpg"
-  },
-  {
-    "title": "The Great Outdoors",
-    "format": "VHS",
-    "category": "movie",
-    "status": "have",
-    "poster": "https://image.tmdb.org/t/p/w342/zxIoPZiqKOxrWvieumpxA6bOgkt.jpg"
-  },
-  {
-    "title": "Grumpier Old Men",
-    "format": "VHS",
-    "category": "movie",
-    "status": "have",
-    "poster": "https://image.tmdb.org/t/p/w342/1FSXpj5e8l4KH6nVFO5SPUeraOt.jpg"
-  },
-  {
-    "title": "Home Alone 3",
-    "format": "VHS",
-    "category": "movie",
-    "status": "have",
-    "poster": "https://image.tmdb.org/t/p/w342/6uOadrCfle0n2LOOxHbgWEdnrm2.jpg"
-  },
-  {
-    "title": "Let It Ride (Richard Dreyfuss)",
-    "format": "VHS",
-    "category": "movie",
-    "status": "have",
-    "poster": null
-  },
-  {
-    "title": "Liar Liar",
-    "format": "VHS",
-    "category": "movie",
-    "status": "have",
-    "poster": "https://image.tmdb.org/t/p/w342/p1habYSdC7oD3WygQ5lynU5G5rV.jpg"
-  },
-  {
-    "title": "Mission: Impossible",
-    "format": "VHS",
-    "category": "movie",
-    "status": "have",
-    "poster": "https://image.tmdb.org/t/p/w342/l5uxY5m5OInWpcExIpKG6AR3rgL.jpg"
-  },
-  {
-    "title": "Ransom (Mel Gibson)",
-    "format": "VHS",
-    "category": "movie",
-    "status": "have",
-    "poster": null
-  },
-  {
-    "title": "Runaway Bride",
-    "format": "VHS",
-    "category": "movie",
-    "status": "have",
-    "poster": "https://image.tmdb.org/t/p/w342/wzivR0yWJStVdhcl0A5rQvVdTQ7.jpg"
-  },
-  {
-    "title": "Star Trek: First Contact",
-    "format": "VHS",
-    "category": "movie",
-    "status": "have",
-    "poster": "https://image.tmdb.org/t/p/w342/iqhHe893Vcf07jNkNQ31tu85dKG.jpg"
-  },
-  {
-    "title": "Star Trek VI: The Undiscovered Country",
-    "format": "VHS",
-    "category": "movie",
-    "status": "have",
-    "poster": "https://image.tmdb.org/t/p/w342/tvTOJD7Gz668GLy2nNdLRQvpPsv.jpg"
-  },
-  {
     "title": "Thomas the Tank Engine & Friends: James Learns a Lesson & Other Stories",
     "format": "VHS",
     "category": "tv",
@@ -140,31 +7,9 @@
     "poster": null
   },
   {
-    "title": "True Lies",
-    "format": "VHS",
-    "category": "movie",
-    "status": "have",
-    "poster": "https://image.tmdb.org/t/p/w342/pqdvCBDThAOjlA0XBzbNm7GvwpU.jpg"
-  },
-  {
     "title": "Rugrats Vol. 2: A Baby's Gotta Do What A Baby's Gotta Do",
     "format": "VHS",
     "category": "tv",
-    "status": "have",
-    "poster": null
-  },
-  {
-    "title": "Star Wars Trilogy: Special Edition THX Box Set",
-    "format": "VHS",
-    "category": "movie",
-    "status": "have",
-    "copies": 2,
-    "poster": null
-  },
-  {
-    "title": "James Bond 007 Gift Set Vol. 1 (Dr. No / From Russia with Love / Goldfinger / Behind-the-Scenes with Goldfinger)",
-    "format": "VHS",
-    "category": "movie",
     "status": "have",
     "poster": null
   },
@@ -278,6 +123,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "James Bond",
     "poster": "https://image.tmdb.org/t/p/w342/9wdw5H018bgIM8bK2HuDvh8BwOh.jpg"
   },
   {
@@ -341,6 +187,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "Fast & Furious",
     "poster": "https://image.tmdb.org/t/p/w342/gqY0ITBgT7A82poL9jv851qdnIb.jpg"
   },
   {
@@ -348,6 +195,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "Fast & Furious",
     "poster": "https://image.tmdb.org/t/p/w342/6nDZExrDKIXvSAghsFKVFRVJuSf.jpg"
   },
   {
@@ -355,6 +203,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "Fast & Furious",
     "poster": "https://image.tmdb.org/t/p/w342/46xqGOwHbh2TH2avWSw3SMXph4E.jpg"
   },
   {
@@ -362,6 +211,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "Fast & Furious",
     "poster": "https://image.tmdb.org/t/p/w342/qRyy2UmjC5ur9bDi3kpNNRCc5nc.jpg"
   },
   {
@@ -369,6 +219,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "Fast & Furious",
     "poster": null
   },
   {
@@ -376,6 +227,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "Fast & Furious",
     "poster": "https://image.tmdb.org/t/p/w342/thSmnRdrzPBBospIOJjLZBReqzo.jpg"
   },
   {
@@ -425,6 +277,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "Godfather",
     "poster": "https://image.tmdb.org/t/p/w342/3bhkrj58Vtu7enYsRolD1fZdja1.jpg"
   },
   {
@@ -432,6 +285,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "Godfather",
     "poster": "https://image.tmdb.org/t/p/w342/8a1lJs7mFyGhGhZZDT1azJUoQiZ.jpg"
   },
   {
@@ -460,6 +314,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "Harry Potter",
     "poster": "https://image.tmdb.org/t/p/w342/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg"
   },
   {
@@ -467,6 +322,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "Harry Potter",
     "poster": "https://image.tmdb.org/t/p/w342/sdEOH0992YZ0QSxgXNIGLq1ToUi.jpg"
   },
   {
@@ -474,6 +330,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "Harry Potter",
     "poster": "https://image.tmdb.org/t/p/w342/aWxwnYoe8p2d2fcxOqtvAtJ72Rw.jpg"
   },
   {
@@ -481,6 +338,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "Harry Potter",
     "poster": "https://image.tmdb.org/t/p/w342/fECBtHlr0RB3foNHDiCBXeg9Bv9.jpg"
   },
   {
@@ -488,6 +346,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "Harry Potter",
     "poster": "https://image.tmdb.org/t/p/w342/5aOyriWkPec0zUDxmHFP9qMmBaj.jpg"
   },
   {
@@ -495,6 +354,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "Harry Potter",
     "poster": "https://image.tmdb.org/t/p/w342/z7uo9zmQdQwU5ZJHFpv2Upl30i1.jpg"
   },
   {
@@ -502,6 +362,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "Harry Potter",
     "poster": "https://image.tmdb.org/t/p/w342/c54HpQmuwXjHq2C9wmoACjxoom3.jpg"
   },
   {
@@ -544,6 +405,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "John Wick",
     "poster": "https://image.tmdb.org/t/p/w342/hXWBc0ioZP3cN4zCu6SN3YHXZVO.jpg"
   },
   {
@@ -551,6 +413,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "John Wick",
     "poster": "https://image.tmdb.org/t/p/w342/ziEuG1essDuWuC5lpWUaw1uXY2O.jpg"
   },
   {
@@ -670,6 +533,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "James Bond",
     "poster": "https://image.tmdb.org/t/p/w342/e3DXXLJHGqMx9yYpXsql1XNljmM.jpg"
   },
   {
@@ -797,6 +661,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "Twilight",
     "poster": "https://image.tmdb.org/t/p/w342/3Gkb6jm6962ADUPaCBqzz9CTbn9.jpg"
   },
   {
@@ -804,6 +669,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "Twilight",
     "poster": "https://image.tmdb.org/t/p/w342/k2qTooPlHffgNABNWxeJdGMglPK.jpg"
   },
   {
@@ -811,6 +677,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "Twilight",
     "poster": "https://image.tmdb.org/t/p/w342/dK4Gi1UdMiHzHc7r7CZQG4IQ9Sr.jpg"
   },
   {
@@ -965,6 +832,7 @@
     "format": "DVD",
     "category": "tv",
     "status": "have",
+    "collection": "3rd Rock from the Sun",
     "poster": null
   },
   {
@@ -972,6 +840,7 @@
     "format": "DVD",
     "category": "tv",
     "status": "have",
+    "collection": "3rd Rock from the Sun",
     "poster": null
   },
   {
@@ -993,6 +862,7 @@
     "format": "DVD",
     "category": "tv",
     "status": "have",
+    "collection": "Aqua Teen Hunger Force",
     "poster": null
   },
   {
@@ -1000,6 +870,7 @@
     "format": "DVD",
     "category": "tv",
     "status": "have",
+    "collection": "Aqua Teen Hunger Force",
     "poster": null
   },
   {
@@ -1007,6 +878,7 @@
     "format": "DVD",
     "category": "tv",
     "status": "have",
+    "collection": "Aqua Teen Hunger Force",
     "poster": null
   },
   {
@@ -1028,6 +900,7 @@
     "format": "DVD",
     "category": "tv",
     "status": "have",
+    "collection": "King of the Hill",
     "poster": null
   },
   {
@@ -1042,6 +915,7 @@
     "format": "DVD",
     "category": "tv",
     "status": "have",
+    "collection": "The Office",
     "poster": null
   },
   {
@@ -1049,6 +923,7 @@
     "format": "DVD",
     "category": "tv",
     "status": "have",
+    "collection": "The Office",
     "poster": null
   },
   {

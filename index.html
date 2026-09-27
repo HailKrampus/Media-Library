@@ -123,6 +123,38 @@
     color: #7a6a55;
     margin-top: 40px;
   }
+  body.dark {
+    --sand: #241f1a;
+    --card: #2f2822;
+    --ink: #f0e6d8;
+    --border: #4a3f34;
+  }
+  .theme-btn {
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--card);
+    color: var(--ink);
+    cursor: pointer;
+    font-size: 0.95rem;
+  }
+  .progress-bar {
+    width: 100%;
+    height: 6px;
+    background: var(--border);
+    border-radius: 999px;
+    overflow: hidden;
+    margin: 4px 0 2px;
+  }
+  .progress-fill {
+    height: 100%;
+    background: var(--turquoise);
+  }
+  .progress-text {
+    font-size: 0.78rem;
+    color: #7a6a55;
+    margin-bottom: 6px;
+  }
 </style>
 </head>
 <body>
@@ -149,6 +181,12 @@
     <option value="Blu-ray">Blu-ray</option>
   </select>
   <button class="surprise-btn" id="surpriseBtn">🎲 Surprise me</button>
+  <select id="sortBy">
+    <option value="title">Sort: Title A-Z</option>
+    <option value="format">Sort: Format</option>
+    <option value="recent">Sort: Recently Added</option>
+  </select>
+  <button class="theme-btn" id="themeToggle">🌙</button>
 </div>
 
 <div class="stats" id="stats"></div>
@@ -157,9 +195,14 @@
 <script>
 let library = [];
 
+if (localStorage.getItem('theme') === 'dark') {
+  document.body.classList.add('dark');
+}
+
 fetch('media.json')
   .then(res => res.json())
   .then(data => {
+    data.forEach((item, i) => { item._idx = i; });
     library = data;
     render();
   })
@@ -168,10 +211,16 @@ fetch('media.json')
       '<div class="empty">Could not load media.json — make sure it\'s in the same folder as this page.</div>';
   });
 
+document.getElementById('themeToggle').addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+  localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+});
+
 document.getElementById('search').addEventListener('input', render);
 document.getElementById('statusFilter').addEventListener('change', render);
 document.getElementById('categoryFilter').addEventListener('change', render);
 document.getElementById('formatFilter').addEventListener('change', render);
+document.getElementById('sortBy').addEventListener('change', render);
 document.getElementById('surpriseBtn').addEventListener('click', () => {
   const haves = library.filter(i => i.status === 'have');
   if (haves.length === 0) return;
@@ -207,6 +256,8 @@ function render() {
     return;
   }
 
+  const sortBy = document.getElementById('sortBy').value;
+
   if (status === 'need') {
     const groups = {};
     filtered.forEach(item => {
@@ -215,8 +266,15 @@ function render() {
     });
     let html = '';
     Object.keys(groups).sort().forEach(key => {
+      const needItems = groups[key];
+      const haveCount = library.filter(i => i.status === 'have' && i.collection === key).length;
+      const needCount = needItems.length;
+      const total = haveCount + needCount;
+      const percent = total ? Math.round((haveCount / total) * 100) : 0;
       html += `<div class="group-label">${key}</div>`;
-      groups[key].sort((a, b) => a.title.localeCompare(b.title)).forEach(item => {
+      html += `<div class="progress-bar"><div class="progress-fill" style="width:${percent}%"></div></div>`;
+      html += `<div class="progress-text">${haveCount} owned, ${needCount} missing</div>`;
+      sortItems(needItems, sortBy).forEach(item => {
         html += renderItem(item);
       });
     });
@@ -231,13 +289,25 @@ function render() {
     ['movie', 'tv'].forEach(cat => {
       if (groups[cat] && groups[cat].length) {
         html += `<div class="group-label">${labels[cat]} (${groups[cat].length})</div>`;
-        groups[cat].sort((a, b) => a.title.localeCompare(b.title)).forEach(item => {
+        sortItems(groups[cat], sortBy).forEach(item => {
           html += renderItem(item);
         });
       }
     });
     resultsEl.innerHTML = html;
   }
+}
+
+function sortItems(items, sortBy) {
+  const sorted = [...items];
+  if (sortBy === 'format') {
+    sorted.sort((a, b) => (a.format || '').localeCompare(b.format || '') || a.title.localeCompare(b.title));
+  } else if (sortBy === 'recent') {
+    sorted.sort((a, b) => b._idx - a._idx);
+  } else {
+    sorted.sort((a, b) => a.title.localeCompare(b.title));
+  }
+  return sorted;
 }
 
 function formatIcon(fmt) {
