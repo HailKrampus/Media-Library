@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#c1622d">
+<link rel="manifest" href="manifest.json">
 <title>Media Library</title>
 <style>
   :root {
@@ -197,6 +199,12 @@ let library = [];
 
 if (localStorage.getItem('theme') === 'dark') {
   document.body.classList.add('dark');
+}
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('service-worker.js');
+  });
 }
 
 fetch('media.json')
