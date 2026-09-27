@@ -25,6 +25,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "Alien",
     "poster": "https://image.tmdb.org/t/p/w342/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg"
   },
   {
@@ -46,6 +47,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "Anchorman",
     "poster": "https://image.tmdb.org/t/p/w342/mhZIcRePT7U8viFQVjt1ZjYIsR4.jpg"
   },
   {
@@ -67,6 +69,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "The Dark Knight Trilogy",
     "poster": "https://image.tmdb.org/t/p/w342/sPX89Td70IDDjVr85jdSBb4rWGr.jpg"
   },
   {
@@ -81,6 +84,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "Beetlejuice",
     "poster": "https://image.tmdb.org/t/p/w342/kKgQzkUCnQmeTPkyIwHly2t6ZFI.jpg"
   },
   {
@@ -95,6 +99,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "Beverly Hills Cop",
     "poster": "https://image.tmdb.org/t/p/w342/eBJEvKkhQ0tUt1dBAcTEYW6kCle.jpg"
   },
   {
@@ -102,6 +107,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "Bourne",
     "poster": "https://image.tmdb.org/t/p/w342/aP8swke3gmowbkfZ6lmNidu0y9p.jpg"
   },
   {
@@ -131,6 +137,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "The Dark Knight Trilogy",
     "poster": "https://image.tmdb.org/t/p/w342/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
   },
   {
@@ -138,6 +145,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "Deadpool",
     "poster": "https://image.tmdb.org/t/p/w342/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg"
   },
   {
@@ -152,6 +160,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "The Descent",
     "poster": "https://image.tmdb.org/t/p/w342/mxFPI4KYBk5ri9cPteIS8jiDFgj.jpg"
   },
   {
@@ -442,6 +451,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "The Matrix",
     "poster": "https://image.tmdb.org/t/p/w342/qEWiBXJGXK28jGBAm8oFKKTB0WD.jpg"
   },
   {
@@ -498,6 +508,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "Pirates of the Caribbean",
     "poster": "https://image.tmdb.org/t/p/w342/poHwCZeWzJCShH7tOjg8RIoyjcw.jpg"
   },
   {
@@ -527,6 +538,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "Quarantine",
     "poster": "https://image.tmdb.org/t/p/w342/rGfOD8IC1x4PqmnqRuA8KyCckia.jpg"
   },
   {
@@ -534,6 +546,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "Riddick",
     "poster": "https://image.tmdb.org/t/p/w342/bVO1r90diKfFLzvZ5D3qK6Z558O.jpg"
   },
   {
@@ -619,6 +632,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "Suicide Squad",
     "poster": "https://image.tmdb.org/t/p/w342/q61qEyssk2ku3okWICKArlAdhBn.jpg"
   },
   {
@@ -626,6 +640,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "Super Troopers",
     "poster": "https://image.tmdb.org/t/p/w342/57SZgdugVClIy22rfnANeBJ5KsN.jpg"
   },
   {
@@ -762,6 +777,7 @@
     "format": "DVD",
     "category": "movie",
     "status": "have",
+    "collection": "Horrible Bosses",
     "poster": "https://image.tmdb.org/t/p/w342/boBOkwIqgrs8noxBUSDkkicKa4K.jpg"
   },
   {
@@ -841,6 +857,7 @@
     "format": "DVD",
     "category": "tv",
     "status": "have",
+    "collection": "Archer",
     "poster": "https://image.tmdb.org/t/p/w342/vhnrkTGYPqcB63ALcSJm0WoaKHT.jpg"
   },
   {
@@ -872,6 +889,7 @@
     "format": "DVD",
     "category": "tv",
     "status": "have",
+    "collection": "Family Guy",
     "poster": "https://image.tmdb.org/t/p/w342/3PFsEuAiyLkWsP4GG6dIV37Q6gu.jpg"
   },
   {
@@ -879,6 +897,7 @@
     "format": "DVD",
     "category": "tv",
     "status": "have",
+    "collection": "Family Guy",
     "poster": "https://image.tmdb.org/t/p/w342/3PFsEuAiyLkWsP4GG6dIV37Q6gu.jpg"
   },
   {
@@ -931,6 +950,7 @@
     "format": "DVD",
     "category": "tv",
     "status": "have",
+    "collection": "Seinfeld",
     "poster": "https://image.tmdb.org/t/p/w342/aCw8ONfyz3AhngVQa1E2Ss4KSUQ.jpg"
   },
   {
@@ -938,6 +958,7 @@
     "format": "DVD",
     "category": "tv",
     "status": "have",
+    "collection": "Star Trek: Voyager",
     "poster": "https://image.tmdb.org/t/p/w342/gNS5tRSG3UlXodCxznKKOKweqxh.jpg"
   },
   {
@@ -959,6 +980,7 @@
     "format": "DVD",
     "category": "tv",
     "status": "have",
+    "collection": "The Unit",
     "poster": "https://image.tmdb.org/t/p/w342/ftwhXqizcVRo4pgqFnTysR9tAIM.jpg"
   },
   {
@@ -966,6 +988,7 @@
     "format": "DVD",
     "category": "tv",
     "status": "have",
+    "collection": "The X-Files",
     "poster": "https://image.tmdb.org/t/p/w342/rcBx0p8h51LHceyhquYMxbspJQu.jpg"
   },
   {
@@ -973,6 +996,7 @@
     "format": "DVD",
     "category": "tv",
     "status": "have",
+    "collection": "The X-Files",
     "poster": "https://image.tmdb.org/t/p/w342/rcBx0p8h51LHceyhquYMxbspJQu.jpg"
   },
   {
@@ -980,6 +1004,7 @@
     "format": "DVD",
     "category": "tv",
     "status": "have",
+    "collection": "The X-Files",
     "poster": "https://image.tmdb.org/t/p/w342/rcBx0p8h51LHceyhquYMxbspJQu.jpg"
   },
   {
@@ -1124,7 +1149,7 @@
     "category": "movie",
     "status": "need",
     "collection": "Star Wars",
-    "poster": "https://image.tmdb.org/t/p/w342/uzHMp5heVLR68kbbUEXFPsmxYsM.jpg"
+    "poster": "https://image.tmdb.org/t/p/w342/efSsZJaddeq0LOABZqpCXdMxv9P.jpg"
   },
   {
     "title": "Die Another Day",
@@ -1261,5 +1286,429 @@
     "status": "need",
     "collection": "Aqua Teen Hunger Force",
     "poster": "https://image.tmdb.org/t/p/w342/jCWOkfMLsT2sGHadCkmR65MWtJu.jpg"
+  },
+  {
+    "title": "The Bourne Legacy",
+    "format": "",
+    "category": "movie",
+    "status": "need",
+    "collection": "Bourne",
+    "poster": "https://image.tmdb.org/t/p/w342/1aExL5DTGHj25ZfIC3dDwS84RWi.jpg"
+  },
+  {
+    "title": "Jason Bourne",
+    "format": "",
+    "category": "movie",
+    "status": "need",
+    "collection": "Bourne",
+    "poster": "https://image.tmdb.org/t/p/w342/xA7N41glw17MBQtcWSm2eBlBRuG.jpg"
+  },
+  {
+    "title": "Beverly Hills Cop: Axel F",
+    "format": "",
+    "category": "movie",
+    "status": "need",
+    "collection": "Beverly Hills Cop",
+    "poster": "https://image.tmdb.org/t/p/w342/yE0iZBxkL8aKYNkkeHoUzx5M88c.jpg"
+  },
+  {
+    "title": "The Matrix",
+    "format": "",
+    "category": "movie",
+    "status": "need",
+    "collection": "The Matrix",
+    "poster": "https://image.tmdb.org/t/p/w342/dXNAPwY7VrqMAo51EKhhCJfaGb5.jpg"
+  },
+  {
+    "title": "The Matrix Reloaded",
+    "format": "",
+    "category": "movie",
+    "status": "need",
+    "collection": "The Matrix",
+    "poster": "https://image.tmdb.org/t/p/w342/8xEVAe84zlL9rkfYT6dZXero4KK.jpg"
+  },
+  {
+    "title": "The Matrix Resurrections",
+    "format": "",
+    "category": "movie",
+    "status": "need",
+    "collection": "The Matrix",
+    "poster": "https://image.tmdb.org/t/p/w342/8c4a8kE7PizaGQQnditMmI1xbRp.jpg"
+  },
+  {
+    "title": "Pirates of the Caribbean: Dead Man's Chest",
+    "format": "",
+    "category": "movie",
+    "status": "need",
+    "collection": "Pirates of the Caribbean",
+    "poster": "https://image.tmdb.org/t/p/w342/uXEqmloGyP7UXAiphJUu2v2pcuE.jpg"
+  },
+  {
+    "title": "Pirates of the Caribbean: At World's End",
+    "format": "",
+    "category": "movie",
+    "status": "need",
+    "collection": "Pirates of the Caribbean",
+    "poster": "https://image.tmdb.org/t/p/w342/jGWpG4YhpQwVmjyHEGkxEkeRf0S.jpg"
+  },
+  {
+    "title": "Pirates of the Caribbean: On Stranger Tides",
+    "format": "",
+    "category": "movie",
+    "status": "need",
+    "collection": "Pirates of the Caribbean",
+    "poster": "https://image.tmdb.org/t/p/w342/keGfSvCmYj7CvdRx36OdVrAEibE.jpg"
+  },
+  {
+    "title": "Pirates of the Caribbean: Dead Men Tell No Tales",
+    "format": "",
+    "category": "movie",
+    "status": "need",
+    "collection": "Pirates of the Caribbean",
+    "poster": "https://image.tmdb.org/t/p/w342/6lAPOAFYFWIO3SQRemEY2wInQMC.jpg"
+  },
+  {
+    "title": "Super Troopers",
+    "format": "",
+    "category": "movie",
+    "status": "need",
+    "collection": "Super Troopers",
+    "poster": "https://image.tmdb.org/t/p/w342/ecTxAyfx4fdTMy2N288oZMMn3Ey.jpg"
+  },
+  {
+    "title": "Horrible Bosses",
+    "format": "",
+    "category": "movie",
+    "status": "need",
+    "collection": "Horrible Bosses",
+    "poster": "https://image.tmdb.org/t/p/w342/uQkUwgyFHAm0jGQERPG6Z9o9Zbj.jpg"
+  },
+  {
+    "title": "Prometheus",
+    "format": "",
+    "category": "movie",
+    "status": "need",
+    "collection": "Alien",
+    "poster": "https://image.tmdb.org/t/p/w342/qsYQflQhOuhDpQ0W2aOcwqgDAeI.jpg"
+  },
+  {
+    "title": "Alien: Covenant",
+    "format": "",
+    "category": "movie",
+    "status": "need",
+    "collection": "Alien",
+    "poster": "https://image.tmdb.org/t/p/w342/zecMELPbU5YMQpC81Z8ImaaXuf9.jpg"
+  },
+  {
+    "title": "Alien: Romulus",
+    "format": "",
+    "category": "movie",
+    "status": "need",
+    "collection": "Alien",
+    "poster": "https://image.tmdb.org/t/p/w342/2uSWRTtCG336nuBiG8jOTEUKSy8.jpg"
+  },
+  {
+    "title": "Deadpool 2",
+    "format": "",
+    "category": "movie",
+    "status": "need",
+    "collection": "Deadpool",
+    "poster": "https://image.tmdb.org/t/p/w342/to0spRl1CMDvyUbOnbb4fTk3VAd.jpg"
+  },
+  {
+    "title": "Deadpool & Wolverine",
+    "format": "",
+    "category": "movie",
+    "status": "need",
+    "collection": "Deadpool",
+    "poster": "https://image.tmdb.org/t/p/w342/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg"
+  },
+  {
+    "title": "The Dark Knight Rises",
+    "format": "",
+    "category": "movie",
+    "status": "need",
+    "collection": "The Dark Knight Trilogy",
+    "poster": "https://image.tmdb.org/t/p/w342/hr0L2aueqlP2BYUblTTjmtn0hw4.jpg"
+  },
+  {
+    "title": "The Suicide Squad",
+    "format": "",
+    "category": "movie",
+    "status": "need",
+    "collection": "Suicide Squad",
+    "poster": "https://image.tmdb.org/t/p/w342/q61qEyssk2ku3okWICKArlAdhBn.jpg"
+  },
+  {
+    "title": "Anchorman 2: The Legend Continues",
+    "format": "",
+    "category": "movie",
+    "status": "need",
+    "collection": "Anchorman",
+    "poster": "https://image.tmdb.org/t/p/w342/BAdmxMdCqzjs6hx3KuEtnoWP8d.jpg"
+  },
+  {
+    "title": "Pitch Black",
+    "format": "",
+    "category": "movie",
+    "status": "need",
+    "collection": "Riddick",
+    "poster": "https://image.tmdb.org/t/p/w342/3AnlxZ5CZnhKKzjgFyY6EHxmOyl.jpg"
+  },
+  {
+    "title": "Riddick",
+    "format": "",
+    "category": "movie",
+    "status": "need",
+    "collection": "Riddick",
+    "poster": "https://image.tmdb.org/t/p/w342/pUul9pGWOKT7X0smkTvsIEIQxcP.jpg"
+  },
+  {
+    "title": "Quarantine 2: Terminal",
+    "format": "",
+    "category": "movie",
+    "status": "need",
+    "collection": "Quarantine",
+    "poster": "https://image.tmdb.org/t/p/w342/ouQOquRqqaO8sPAziD4BFoNO1Pb.jpg"
+  },
+  {
+    "title": "The Descent: Part 2",
+    "format": "",
+    "category": "movie",
+    "status": "need",
+    "collection": "The Descent",
+    "poster": "https://image.tmdb.org/t/p/w342/dOURlcw2MO0xys0Dl2NiAcUxlWA.jpg"
+  },
+  {
+    "title": "Beetlejuice Beetlejuice",
+    "format": "",
+    "category": "movie",
+    "status": "need",
+    "collection": "Beetlejuice",
+    "poster": "https://image.tmdb.org/t/p/w342/kKgQzkUCnQmeTPkyIwHly2t6ZFI.jpg"
+  },
+  {
+    "title": "Seinfeld: Season 3",
+    "format": "",
+    "category": "tv",
+    "status": "need",
+    "collection": "Seinfeld",
+    "poster": "https://image.tmdb.org/t/p/w342/aCw8ONfyz3AhngVQa1E2Ss4KSUQ.jpg"
+  },
+  {
+    "title": "Seinfeld: Season 4",
+    "format": "",
+    "category": "tv",
+    "status": "need",
+    "collection": "Seinfeld",
+    "poster": "https://image.tmdb.org/t/p/w342/aCw8ONfyz3AhngVQa1E2Ss4KSUQ.jpg"
+  },
+  {
+    "title": "Seinfeld: Season 5",
+    "format": "",
+    "category": "tv",
+    "status": "need",
+    "collection": "Seinfeld",
+    "poster": "https://image.tmdb.org/t/p/w342/aCw8ONfyz3AhngVQa1E2Ss4KSUQ.jpg"
+  },
+  {
+    "title": "Seinfeld: Season 6",
+    "format": "",
+    "category": "tv",
+    "status": "need",
+    "collection": "Seinfeld",
+    "poster": "https://image.tmdb.org/t/p/w342/aCw8ONfyz3AhngVQa1E2Ss4KSUQ.jpg"
+  },
+  {
+    "title": "Seinfeld: Season 7",
+    "format": "",
+    "category": "tv",
+    "status": "need",
+    "collection": "Seinfeld",
+    "poster": "https://image.tmdb.org/t/p/w342/aCw8ONfyz3AhngVQa1E2Ss4KSUQ.jpg"
+  },
+  {
+    "title": "Seinfeld: Season 8",
+    "format": "",
+    "category": "tv",
+    "status": "need",
+    "collection": "Seinfeld",
+    "poster": "https://image.tmdb.org/t/p/w342/aCw8ONfyz3AhngVQa1E2Ss4KSUQ.jpg"
+  },
+  {
+    "title": "Seinfeld: Season 9",
+    "format": "",
+    "category": "tv",
+    "status": "need",
+    "collection": "Seinfeld",
+    "poster": "https://image.tmdb.org/t/p/w342/aCw8ONfyz3AhngVQa1E2Ss4KSUQ.jpg"
+  },
+  {
+    "title": "Star Trek: Voyager — Season 1",
+    "format": "",
+    "category": "tv",
+    "status": "need",
+    "collection": "Star Trek: Voyager",
+    "poster": "https://image.tmdb.org/t/p/w342/gNS5tRSG3UlXodCxznKKOKweqxh.jpg"
+  },
+  {
+    "title": "Star Trek: Voyager — Season 3",
+    "format": "",
+    "category": "tv",
+    "status": "need",
+    "collection": "Star Trek: Voyager",
+    "poster": "https://image.tmdb.org/t/p/w342/gNS5tRSG3UlXodCxznKKOKweqxh.jpg"
+  },
+  {
+    "title": "Star Trek: Voyager — Season 4",
+    "format": "",
+    "category": "tv",
+    "status": "need",
+    "collection": "Star Trek: Voyager",
+    "poster": "https://image.tmdb.org/t/p/w342/gNS5tRSG3UlXodCxznKKOKweqxh.jpg"
+  },
+  {
+    "title": "Star Trek: Voyager — Season 5",
+    "format": "",
+    "category": "tv",
+    "status": "need",
+    "collection": "Star Trek: Voyager",
+    "poster": "https://image.tmdb.org/t/p/w342/gNS5tRSG3UlXodCxznKKOKweqxh.jpg"
+  },
+  {
+    "title": "Star Trek: Voyager — Season 6",
+    "format": "",
+    "category": "tv",
+    "status": "need",
+    "collection": "Star Trek: Voyager",
+    "poster": "https://image.tmdb.org/t/p/w342/gNS5tRSG3UlXodCxznKKOKweqxh.jpg"
+  },
+  {
+    "title": "Star Trek: Voyager — Season 7",
+    "format": "",
+    "category": "tv",
+    "status": "need",
+    "collection": "Star Trek: Voyager",
+    "poster": "https://image.tmdb.org/t/p/w342/gNS5tRSG3UlXodCxznKKOKweqxh.jpg"
+  },
+  {
+    "title": "The Unit: Season 2",
+    "format": "",
+    "category": "tv",
+    "status": "need",
+    "collection": "The Unit",
+    "poster": "https://image.tmdb.org/t/p/w342/ftwhXqizcVRo4pgqFnTysR9tAIM.jpg"
+  },
+  {
+    "title": "The Unit: Season 3",
+    "format": "",
+    "category": "tv",
+    "status": "need",
+    "collection": "The Unit",
+    "poster": "https://image.tmdb.org/t/p/w342/ftwhXqizcVRo4pgqFnTysR9tAIM.jpg"
+  },
+  {
+    "title": "The Unit: Season 4",
+    "format": "",
+    "category": "tv",
+    "status": "need",
+    "collection": "The Unit",
+    "poster": "https://image.tmdb.org/t/p/w342/ftwhXqizcVRo4pgqFnTysR9tAIM.jpg"
+  },
+  {
+    "title": "The X-Files: Season One",
+    "format": "",
+    "category": "tv",
+    "status": "need",
+    "collection": "The X-Files",
+    "poster": "https://image.tmdb.org/t/p/w342/rcBx0p8h51LHceyhquYMxbspJQu.jpg"
+  },
+  {
+    "title": "The X-Files: Season Two",
+    "format": "",
+    "category": "tv",
+    "status": "need",
+    "collection": "The X-Files",
+    "poster": "https://image.tmdb.org/t/p/w342/rcBx0p8h51LHceyhquYMxbspJQu.jpg"
+  },
+  {
+    "title": "The X-Files: Season Three",
+    "format": "",
+    "category": "tv",
+    "status": "need",
+    "collection": "The X-Files",
+    "poster": "https://image.tmdb.org/t/p/w342/rcBx0p8h51LHceyhquYMxbspJQu.jpg"
+  },
+  {
+    "title": "The X-Files: Season Four",
+    "format": "",
+    "category": "tv",
+    "status": "need",
+    "collection": "The X-Files",
+    "poster": "https://image.tmdb.org/t/p/w342/rcBx0p8h51LHceyhquYMxbspJQu.jpg"
+  },
+  {
+    "title": "The X-Files: Season Five",
+    "format": "",
+    "category": "tv",
+    "status": "need",
+    "collection": "The X-Files",
+    "poster": "https://image.tmdb.org/t/p/w342/rcBx0p8h51LHceyhquYMxbspJQu.jpg"
+  },
+  {
+    "title": "The X-Files: Season Seven",
+    "format": "",
+    "category": "tv",
+    "status": "need",
+    "collection": "The X-Files",
+    "poster": "https://image.tmdb.org/t/p/w342/rcBx0p8h51LHceyhquYMxbspJQu.jpg"
+  },
+  {
+    "title": "The X-Files: Season Ten",
+    "format": "",
+    "category": "tv",
+    "status": "need",
+    "collection": "The X-Files",
+    "poster": "https://image.tmdb.org/t/p/w342/rcBx0p8h51LHceyhquYMxbspJQu.jpg"
+  },
+  {
+    "title": "The X-Files: Season Eleven",
+    "format": "",
+    "category": "tv",
+    "status": "need",
+    "collection": "The X-Files",
+    "poster": "https://image.tmdb.org/t/p/w342/rcBx0p8h51LHceyhquYMxbspJQu.jpg"
+  },
+  {
+    "title": "The X-Files: Fight the Future",
+    "format": "",
+    "category": "movie",
+    "status": "need",
+    "collection": "The X-Files",
+    "poster": "https://image.tmdb.org/t/p/w342/2bHJ7A28q3KytS5nKAmYHtEnGIo.jpg"
+  },
+  {
+    "title": "The X-Files: I Want to Believe",
+    "format": "",
+    "category": "movie",
+    "status": "need",
+    "collection": "The X-Files",
+    "poster": "https://image.tmdb.org/t/p/w342/3zQMhutUMJP6lK49x7i2YfsOHL9.jpg"
+  },
+  {
+    "title": "Archer: any other seasons",
+    "format": "",
+    "category": "tv",
+    "status": "need",
+    "collection": "Archer",
+    "poster": null
+  },
+  {
+    "title": "Family Guy: other volumes/seasons",
+    "format": "",
+    "category": "tv",
+    "status": "need",
+    "collection": "Family Guy",
+    "poster": null
   }
 ]
